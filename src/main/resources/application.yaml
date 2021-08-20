@@ -4,8 +4,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: jieun0502@gmail.com
-    password: ungjwkbotqivwmkv
+    username:
+    password:
     properties:
       mail:
         smtp:
@@ -29,27 +29,27 @@ spring:
     multipart:
       max-file-size: 5MB
       max-request-size: 30MB
-      location: D:/springImg
+      location: D:\springImg2
   security:
     oauth2:
       client:
         registration:
           google:
-            client-id: 780058930403-hloavlv0ur8u37d260atq4cia71hbb9g.apps.googleusercontent.com
-            client-secret: jp6zFP5SsT2xdeRDh5kR3Kny # 보안 비밀
+            client-id:
+            client-secret:  # 보안 비밀
             scope:
               - profile
               - email
           facebook:
-            client-id: 238380494815359 # bknk - Test1
-            client-secret: cdae814c53243fa1d72008b71217cafd
+            client-id:  # bknk - Test1
+            client-secret:
             scope:
               - email
               - public_profile
           kakao:
             authorization-grant-type: authorization_code
-            client-id: eabcda074908fecc038dc16a22f1b3cf #카카오 요약정보에 REST API키
-            client-secret: tFnxXVabfNkVgo4iQrLU5Px4RuAWJ1xL #카카오 로그인의 보안에서 client secret
+            client-id:  #카카오 요약정보에 REST API키
+            client-secret:  #카카오 로그인의 보안에서 client secret
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}" #{baseUrl}:localhost {registrationId}:kakao
             scope:
               - profile_nickname
@@ -60,8 +60,8 @@ spring:
             client-name: Kakao
           naver:
             authorization-grant-type: authorization_code
-            client-id: BlUbB8aqm2NDfY08uDGC #네이버 Client-id
-            client-secret: lb1xSGigP1 #네이버 client-secret
+            client-id:  #네이버 Client-id
+            client-secret:  #네이버 client-secret
             redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}" #{registrationId}:naver
             scope: name,profile_image # ,gender,mobile,email
             client-name: Naver
